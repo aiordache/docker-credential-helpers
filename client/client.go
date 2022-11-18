@@ -67,6 +67,7 @@ func Get(program ProgramFunc, serverURL string) (*credentials.Credentials, error
 
 		return nil, fmt.Errorf("error getting credentials - err: %v, out: `%s`", err, t)
 	}
+	println("this is a test - 12344")
 
 	resp := &credentials.Credentials{
 		ServerURL: serverURL,
